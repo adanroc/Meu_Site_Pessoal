@@ -1,0 +1,108 @@
+.contact h2 { margin-bottom: 3rem; }
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form textarea { resize: none; }
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Floating labels */
+
+.contact form .input-box .subInputBox { 
+    display: flex;
+    position: relative;
+    width: 49%;
+}
+
+.contact form .input-box .subInputBox textarea { 
+    width: 100%;
+}
+
+.contact form .input-box .subInputBox input,
+.contact form .subInputBox textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;    
+}
+
+.input { transition: 0.1s ease; }
+
+.labelline, .labelline-textarea {
+    position: absolute;
+
+    /* margin: 20px 17px; */
+    top: 50%;
+    left: 1.7rem;
+    transform: translateY(-50%);
+
+    font-size: 1.6rem;
+    color: gray;
+    transition: 0.2s ease;
+}
+
+.labelline-textarea { top: 35%; }
+
+.input:focus,
+.input:not(:placeholder-shown)
+{
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    outline: none;
+    background: transparent !important;
+}
+
+/* Propriedades: input:focus, input:valid (o valid, só funciona com o atributo required) */
+.input:focus + .labelline,
+.input:not(:placeholder-shown) + .labelline,
+.input:focus + .labelline-textarea,
+.input:not(:placeholder-shown) + .labelline-textarea
+{
+    /* transform: translate(-15px, -39px) scale(0.88); */
+    transform: translate(-10%, -165%) scale(0.88);
+    color: var(--main-color);
+    padding: 0 12px;
+    border-radius: .9rem;
+    background: var(--bg-color);
+} 
+
+.input:focus + .labelline-textarea,
+.input:not(:placeholder-shown) + .labelline-textarea
+/* transform: translate(-15px, -40px) scale(0.88); */
+/* somente o textarea preenchido */
+/* { transform: translate(-10%, -172%) scale(0.88); position: absolute; }  */
+/* todos preenchidos */
+{ transform: translate(-10%, -172%) scale(0.88); position: absolute; } 
+
+.labelline,
+.labelline-textarea {
+    pointer-events: none;
+}
+
+/* Count characteres textarea */
+
+.contact #msgTextareaContact {    
+    position: absolute;
+    font-size: 1.4rem;
+}
+.contact .alert { color: orange; }
+.contact .stop { color: red; font-weight: 650;}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+

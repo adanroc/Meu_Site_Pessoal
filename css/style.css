@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('header.css');
+@import url('section-home.css');
+@import url('section-about.css');
+@import url('section-services.css');
+@import url('section-portfolio.css');
+@import url('section-contact.css');
+@import url('footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    /* scroll-behavior: smooth; */
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --second-border-color: #a9a9a9;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+/* Classes gerais */
+
+/* img {
+    width: 35vw;
+
+    background: var(--main-color);
+    border-radius: 50%;
+} */
+
+span { color: var(--main-color); }
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5 ease;
+}
+.btn:hover { box-shadow: none; } 
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;  
+}
+
+/* Sweet Alert */
+
+/* Aumenta a fonte geral */
+.swal2-popup { font-size: 2.3rem !important; }
+/* Aumenta especificamente o título */
+.swal2-title { font-size: 3.3rem !important; } 
+/* Aumenta o texto do corpo */
+/* .swal2-html-container { font-size: 1.1em !important; } */
+
+/* breakpoints */
+@media (max-width: 1200px) { 
+    html { font-size: 55%; }   
+    
+    .input:focus + .labelline-textarea,
+    .input:not(:placeholder-shown) + .labelline-textarea
+    /* somente o textarea preenchido */
+    /* { transform: translate(-10%, -172%) scale(0.88); position: absolute; }  */
+    /* todos preenchidos */
+    { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
+}
+
+@media (max-width: 991px) { 
+    .header { padding: 2rem 3%; }
+    section { padding: 10rem 3% 2rem; }
+    .services  { padding-bottom: 7rem; }
+    .portfolio { padding-bottom: 7rem; }
+    .contact { min-height: auto; }
+    .footer { padding: 2rem 3%; }
+}
+
+@media (max-width: 768px) {
+    #menu-icon { display: block; }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active { display: block; }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home { flex-direction: column; }
+    .home-content h1 { font-size: 5rem; }
+    .home-content h3 { font-size: 2.6rem; }
+    .home-img img { width: 70vw; margin-top: 4rem; }
+    
+    .about { flex-direction: column-reverse; }
+    .about img { 
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .services h2 { margin-bottom: 3rem; } 
+
+    .portfolio h2 { margin-bottom: 3rem; }
+    .portfolio-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 617px) { 
+    .portfolio-container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 450px) { 
+    html { font-size: 50%; } 
+    /* .contact form .input-box input { width:  100%; } */
+    .contact form .input-box .subInputBox { width:  100%; }
+
+    .labelline-textarea { top: 50%; }
+
+    .input:focus + .labelline-textarea,
+    .input:not(:placeholder-shown) + .labelline-textarea
+    /* somente o textarea preenchido */
+    /* { transform: translate(-10%, -172%) scale(0.88); position: absolute; }  */
+    /* todos preenchidos */
+    { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
+
+}
+
+@media (max-width: 365px) { 
+    .home-img img { width: 90vw; }
+    .about-img img { width: 90vw; }
+    .footer { flex-direction: column-reverse; }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
