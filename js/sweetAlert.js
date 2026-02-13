@@ -76,9 +76,16 @@ const initSweetAlert = (language = 'EnglishUs') => {
                 Swal.fire({...modalQuestionRedirect, text: hrefButton})
                 .then(result => {
                     if (result.isConfirmed) {
-                        Swal.fire(modalConfirmationRedirect)
-                        // .then(() => window.location.href = hrefButton) // mesma guia
-                        .then(() => window.open(hrefButton, '_blank'))                      
+                        // const currentOrigin = window.location.origin // retorna só o domínio corrente (na url do browser)
+                        // const targetOrigin = new URL(hrefButton).origin // retorna só o domínio do target do link a
+
+                        if (hrefButton === 'https://adanrocha.netlify.app/') {
+                            Swal.fire(modalConfirmationRedirect)
+                            .then(() => window.location.href = hrefButton) // mesma guia                  
+                        } else {
+                            Swal.fire(modalConfirmationRedirect)
+                            .then(() => window.open(hrefButton, '_blank'))                      
+                        }
                     }
                 })
             })           
