@@ -95,6 +95,7 @@ span { color: var(--main-color); }
 }
 
 @media (max-width: 991px) { 
+    /* html { font-size: 52%; } */
     .header { padding: 2rem 3%; }
     section { padding: 10rem 3% 2rem; }
     .services  { padding-bottom: 7rem; }
@@ -143,6 +144,12 @@ span { color: var(--main-color); }
 
 @media (max-width: 617px) { 
     .portfolio-container { grid-template-columns: 1fr; }
+
+    .footer { flex-direction: column-reverse; }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 450px) { 
@@ -159,6 +166,11 @@ span { color: var(--main-color); }
     /* todos preenchidos */
     { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
 
+    .footer { flex-direction: column-reverse; }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 365px) { 

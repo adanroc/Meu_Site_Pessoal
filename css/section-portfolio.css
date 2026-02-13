@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    /* align-items: stretch; */
     gap: 2.5rem;
 }
 
@@ -24,11 +25,24 @@
     display: flex;
 }
 
-.portfolio-box img { 
-    height: 30vh;
+/* Codigo antigo */
+/* .portfolio-box img { 
     width: 100%;
     transition: .5s ease;
- }
+}  */
+
+.portfolio-box {
+    aspect-ratio: 16/10;  
+    /* aspect-ratio: 16/9;   */
+}
+
+.portfolio-box img { 
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    object-fit: cover;
+} 
+
 
 .portfolio-box:hover img { transform: scale(1.1); }
 
@@ -44,7 +58,8 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
+    /* padding: 0 4rem; */
     transform: translateY(100%);
     transition: .5s ease;
 }
@@ -53,21 +68,35 @@
     transform: translateY(0);
 }
 
-.portfolio-layer h4 { font-size: 3rem; }
+.portfolio-layer h4 { 
+    font-size: 2.5rem; 
+    /* font-size: 3rem;  */
+    /* font-size: clamp(1.8rem, 5vw, 2.5rem);  */
+}
 
 .portfolio-layer p {
+    /* font-size: clamp(1.2rem, 3vw, 1.6rem);   */
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    /* max-height: 10rem;  */
+    /* overflow-y: auto;   */
 }
 
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    /* width: clamp(3.5rem, 8vw, 5rem);   */
+    /* height: clamp(3.5rem, 8vw, 5rem); */
     width: 5rem;
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    flex-shrink: 0; 
+}
+
+.portfolio-layer a:hover {
+    transform: scale(1.1);        
 }
 
 .portfolio-layer a i {

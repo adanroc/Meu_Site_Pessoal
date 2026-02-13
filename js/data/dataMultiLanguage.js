@@ -1,7 +1,7 @@
 const ContentText = {
     PortugueseBr: {
         head: {
-            0: 'Adan Rocha',
+            0: 'Adan Rocha Portifólio',
         },
         header: {
             0: 'Adan Portifólio', // textLogo
@@ -24,10 +24,14 @@ const ContentText = {
         },
         portfolio: {
             0: `<span>Projetos</span> Recentes`,
+            // Charactere limits
+            // --------------------
             1: `Lista de Tarefas`,
-            2: `Projeto web. JavaScript puro e Framework Bootstrap. Front-End. Funcionalidades: Adicionar tarefa, Pesquisar tarefa, Destacar texto de pesquisa, Gerar mensagem de nenhum resultado encontrado.`,
+            // Limite de caracteres
+            // ---------------------------------------------------------------------------------------------
+            2: `Projeto web. JavaScript puro. Framework Bootstrap. Front-End.`, // Funcionalidades: Adicionar tarefa, Pesquisar tarefa, Destacar texto de pesquisa, Gerar mensagem de nenhum resultado encontrado.
             3: `Informações do Clima`,
-            4: `Projeto web. JavaScript puro e Framework Bootstrap. Front-End. API AccuWeather. Funcionalidades: Requisições HTTP usando Async/Await, Histório com a LocalStorage, Controle de Requests: Quatidade máxima, Bloqueio de Requests multiplos, Contagem do tempo de bloqueio, Mensagens de feedback com alert`,
+            4: `Projeto web. JavaScript puro. framework Bootstrap. Front-end. API AccuWeather. LocalStorage.`, //  Requisições HTTP (Async/Await) // Funcionalidades: requisições HTTP com Async/Await, histórico com LocalStorage, controle de requisições: quantidade, múltiplas requisições, contagem de tempo, mensagens de feedback.
             5: `Site`,
             6: `Projeto Web desenvolvido com JavaScript e PHP.`,
             7: `Site`,
@@ -52,7 +56,7 @@ const ContentText = {
     },
     EnglishUs: {
         head: {
-            0: 'Adan Rocha',
+            0: 'Adan Rocha Portifóolio',
         },
         header: {
             0: 'Adan Portifolio', // textLogo
@@ -75,10 +79,14 @@ const ContentText = {
         },
         portfolio: {
             0: `Latest <span>Project</span>`,
+            // Charactere limits
+            // --------------------
             1: `To-Do List`,
-            2: `Web project. Pure JavaScript and Bootstrap Framework. Front-End. Features: Add task, Search task, Highlight search text, Generate "no results found" message.`,
-            3: `Web Site`,
-            4: `Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API. Features: HTTP requests using Async/Await, History with LocalStorage, Request control: Maximum quantity, Blocking of multiple requests, Blocking time count, Feedback messages with alerts.`,
+            // Charactere limits
+            // ---------------------------------------------------------------------------------------------
+            2: `Web project. Pure JavaScript. Bootstrap framework. Front End.`, // Features: Add task, Search task, Highlight search text, Generate "no results found" message.
+            3: `Weather Information`,
+            4: `Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.`, // Features: HTTP requests using Async/Await, History with LocalStorage, Request control: quantity, multiple requests, time count, Feedback messages
             5: `Web Site`,
             6: `Web project developed with JavaScript and PHP.`,
             7: `Web Site`,
