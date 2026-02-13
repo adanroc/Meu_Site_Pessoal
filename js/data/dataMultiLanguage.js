@@ -31,9 +31,9 @@ const ContentText = {
             // ---------------------------------------------------------------------------------------------
             2: `Projeto web. JavaScript puro. Framework Bootstrap. Front-End.`, // Funcionalidades: Adicionar tarefa, Pesquisar tarefa, Destacar texto de pesquisa, Gerar mensagem de nenhum resultado encontrado.
             3: `Informações do Clima`,
-            4: `Projeto web. JavaScript puro. framework Bootstrap. Front-end. API AccuWeather. LocalStorage.`, //  Requisições HTTP (Async/Await) // Funcionalidades: requisições HTTP com Async/Await, histórico com LocalStorage, controle de requisições: quantidade, múltiplas requisições, contagem de tempo, mensagens de feedback.
-            5: `Site`,
-            6: `Projeto Web desenvolvido com JavaScript e PHP.`,
+            4: `Projeto web. JavaScript puro. Framework Bootstrap. Front-end. API AccuWeather. LocalStorage.`, //  Requisições HTTP (Async/Await) // Funcionalidades: requisições HTTP com Async/Await, histórico com LocalStorage, controle de requisições: quantidade, múltiplas requisições, contagem de tempo, mensagens de feedback.
+            5: `Editor de Imagem`,
+            6: `Projeto web. JavaScript. Biblitoeca Cropper. Front-End.`,
             7: `Site`,
             8: `Projeto Web desenvolvido com JavaScript e PHP.`,
             9: `Site`,
@@ -84,11 +84,11 @@ const ContentText = {
             1: `To-Do List`,
             // Charactere limits
             // ---------------------------------------------------------------------------------------------
-            2: `Web project. Pure JavaScript. Bootstrap framework. Front End.`, // Features: Add task, Search task, Highlight search text, Generate "no results found" message.
+            2: `Web project. Pure JavaScript. Bootstrap Framework. Front End.`, // Features: Add task, Search task, Highlight search text, Generate "no results found" message.
             3: `Weather Information`,
             4: `Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.`, // Features: HTTP requests using Async/Await, History with LocalStorage, Request control: quantity, multiple requests, time count, Feedback messages
-            5: `Web Site`,
-            6: `Web project developed with JavaScript and PHP.`,
+            5: `Image Editor`,
+            6: `Web project. JavaScript. Cropper Library. Front-End.`,
             7: `Web Site`,
             8: `Web project developed with JavaScript and PHP.`,
             9: `Web Site`,
