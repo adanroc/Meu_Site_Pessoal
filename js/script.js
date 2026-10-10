@@ -14,13 +14,15 @@ const aButtons = document.querySelectorAll('a')
 const inputButton = document.querySelector('input[type="submit"]')
 const socialMediaButtons = document.querySelectorAll('.social-media a')
 const allButtons = Array.from(aButtons).concat(inputButton)
+
 const buttonsBlocked = allButtons.filter( button => {
     const hrefIsNull = button.getAttribute('href') == null
-    const isDisable = button.getAttribute('data-status') === 'disabled'
-    
+    const isDisable = button.getAttribute('data-status') === 'disabled' 
+
     if (hrefIsNull || isDisable) 
         return button    
 })
+
 // Switch language
 const divSwitchLanguage = document.querySelector('.langs')
 const buttonsLanguage = document.querySelectorAll('.button')
@@ -112,13 +114,13 @@ const changeLanguage = (tagsContentTextObject, language) => {
 }
 
 const generateTagsObjectForTranslator = () => {    
-    const tagsFatherArray = ['head', 'header', '.home', '.about', '.portfolio', '.contact', '.footer', 'footer' ]
+    const tagsFatherArray = ['head', 'header', '.home', '.about', '.portfolio', '.donations', '.contact', '.footer', 'footer' ]
     const tagsContentTextObject = {}
     
     tagsFatherArray.forEach(tagFatherItem => {
         const tagFather = document.querySelector(tagFatherItem)
         const sunsTextTagFather = tagFather.querySelectorAll('.text')
-        
+       
         tagFatherItem = tagFatherItem.includes('.') 
             ? tagFatherItem.replace('.', '')
             : tagFatherItem

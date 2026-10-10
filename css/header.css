@@ -72,6 +72,7 @@
 .navbar .langs p.active { 
     background-color: var(--text-color);
     color: var(--second-bg-color);
+    /* transition: .5s ease; */
 }
 
 

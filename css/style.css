@@ -5,6 +5,7 @@
 @import url('section-about.css');
 @import url('section-services.css');
 @import url('section-portfolio.css');
+@import url('section-donations.css');
 @import url('section-contact.css');
 @import url('footer.css');
 
@@ -54,20 +55,6 @@ section {
 
 span { color: var(--main-color); }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5 ease;
-}
-.btn:hover { box-shadow: none; } 
-
 .heading {
   text-align: center;
   font-size: 4.5rem;  
@@ -100,6 +87,7 @@ span { color: var(--main-color); }
     section { padding: 10rem 3% 2rem; }
     .services  { padding-bottom: 7rem; }
     .portfolio { padding-bottom: 7rem; }
+    .donations { padding-bottom: 7rem; font-size: 50%; }
     .contact { min-height: auto; }
     .footer { padding: 2rem 3%; }
 }
@@ -131,10 +119,11 @@ span { color: var(--main-color); }
     .home-img img { width: 70vw; margin-top: 4rem; }
     
     .about { flex-direction: column-reverse; }
-    .about img { 
-        width: 70vw;
-        margin-top: 4rem;
-    }
+    .about img { width: 70vw; margin-top: 4rem; }
+
+    .donations { flex-direction: column; }
+    .donations img { width: 70vw; margin-top: 4rem; }
+    .pix-logo-and-tutorial img { margin-left: 140px; width: 50vw;}
 
     .services h2 { margin-bottom: 3rem; } 
 
@@ -144,6 +133,7 @@ span { color: var(--main-color); }
 
 @media (max-width: 617px) { 
     .portfolio-container { grid-template-columns: 1fr; }
+    .pix-logo-and-tutorial img { margin-left: 90px; }
 
     .footer { flex-direction: column-reverse; }
     .footer p {
@@ -166,6 +156,8 @@ span { color: var(--main-color); }
     /* todos preenchidos */
     { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
 
+    .pix-logo-and-tutorial img { margin-left: 70px; }
+
     .footer { flex-direction: column-reverse; }
     .footer p {
         text-align: center;
@@ -176,6 +168,7 @@ span { color: var(--main-color); }
 @media (max-width: 365px) { 
     .home-img img { width: 90vw; }
     .about-img img { width: 90vw; }
+    .pix-logo-and-tutorial img { margin-left: 50px; }
     .footer { flex-direction: column-reverse; }
     .footer p {
         text-align: center;
