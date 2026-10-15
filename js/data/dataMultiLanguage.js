@@ -32,17 +32,29 @@ const ContentText = {
             1: `Lista de Tarefas`,
             // Limite de caracteres
             // ---------------------------------------------------------------------------------------------
-            2: `Projeto web. JavaScript puro. Framework Bootstrap. Front-End.`, // Funcionalidades: Adicionar tarefa, Pesquisar tarefa, Destacar texto de pesquisa, Gerar mensagem de nenhum resultado encontrado.
+            2: `JavaScript Puro. Bootstrap.`, // Funcionalidades: Adicionar tarefa, Pesquisar tarefa, Destacar texto de pesquisa, Gerar mensagem de nenhum resultado encontrado.
             3: `Informações do Clima`,
-            4: `Projeto web. JavaScript puro. Framework Bootstrap. Front-end. API AccuWeather. LocalStorage.`, //  Requisições HTTP (Async/Await) // Funcionalidades: requisições HTTP com Async/Await, histórico com LocalStorage, controle de requisições: quantidade, múltiplas requisições, contagem de tempo, mensagens de feedback.
+            4: `JavaScript Puro. Bootstrap. API AccuWeather.`, //  Requisições HTTP (Async/Await) // Funcionalidades: requisições HTTP com Async/Await, histórico com LocalStorage, controle de requisições: quantidade, múltiplas requisições, contagem de tempo, mensagens de feedback.
             5: `Editor de Imagem`,
-            6: `Projeto web. JavaScript. Biblitoeca Cropper. Front-End.`,
+            6: `JavaScript Puro. Biblioteca Cropper.`,
             7: `Site`,
             8: `Projeto Web desenvolvido com JavaScript e PHP.`,
             9: `Site`,
             10: `Projeto Web desenvolvido com JavaScript e PHP.`,
             11: `Site`,
             12: `Projeto Web desenvolvido com JavaScript e PHP.`,
+            13: `Lista de Tarefas`,
+            14: `JavaScript Puro. Bootstrap.`, 
+            15: `Informações do Clima`,
+            16: `JavaScript Puro. Bootstrap. API AccuWeather.`, 
+            17: `Editor de Imagem`,
+            18: `JavaScript Puro. Biblioteca Cropper.`,
+            19: `Site`,
+            20: `Projeto Web desenvolvido com JavaScript e PHP.`,
+            21: `Site`,
+            22: `Projeto Web desenvolvido com JavaScript e PHP.`,
+            23: `Site`,
+            24: `Projeto Web desenvolvido com JavaScript e PHP.`,
         },
         donations: {
             0: `<span>Doações</span> para meu trabalho`,
@@ -62,7 +74,8 @@ const ContentText = {
             6: `Enviar Mensagem` // Button Contact Me
         },
         footer: {
-            0: `Copyright &copy; ${year} Adan Rocha. Todos os direitos reservados. Site produzido a partir do script de Codehal`
+            0: `Copyright &copy; ${year} Adan Rocha. Todos os direitos reservados.`,
+            1: `Site produzido a partir do script de Codehal`
         }    
     },
     EnglishUs: {
@@ -96,17 +109,29 @@ const ContentText = {
             1: `To-Do List`,
             // Charactere limits
             // ---------------------------------------------------------------------------------------------
-            2: `Web project. Pure JavaScript. Bootstrap Framework. Front End.`, // Features: Add task, Search task, Highlight search text, Generate "no results found" message.
+            2: `Vanilla JavaScript. Bootstrap.`, // Features: Add task, Search task, Highlight search text, Generate "no results found" message.
             3: `Weather Information`,
-            4: `Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.`, // Features: HTTP requests using Async/Await, History with LocalStorage, Request control: quantity, multiple requests, time count, Feedback messages
+            4: `Vanilla JavaScript. Bootstrap. AccuWeather API.`, // Features: HTTP requests using Async/Await, History with LocalStorage, Request control: quantity, multiple requests, time count, Feedback messages
             5: `Image Editor`,
-            6: `Web project. JavaScript. Cropper Library. Front-End.`,
+            6: `Vanilla JavaScript. Cropper Library.`,
             7: `Web Site`,
             8: `Web project developed with JavaScript and PHP.`,
             9: `Web Site`,
             10: `Web project developed with JavaScript and PHP.`,
             11: `Web Site`,
             12: `Web project developed with JavaScript and PHP.`,
+            13: `To-Do List`,
+            14: `Vanilla JavaScript. Bootstrap.`, 
+            15: `Weather Information`,
+            16: `Vanilla JavaScript. Bootstrap. AccuWeather API.`, 
+            17: `Image Editor`,
+            18: `Vanilla JavaScript. Cropper Library.`,
+            19: `Web Site`,
+            20: `Web project developed with JavaScript and PHP.`,
+            21: `Web Site`,
+            22: `Web project developed with JavaScript and PHP.`,
+            23: `Web Site`,
+            24: `Web project developed with JavaScript and PHP.`,
         },
         donations: {
             0: `<span>Donations</span> for my work`,
@@ -126,7 +151,8 @@ const ContentText = {
             6: `Send Message` // Button Contact Me
         },
         footer: {
-            0: `Copyright &copy; ${year} Adan Rocha. All Rights Reserved. Website created using Codehal's script.`
+            0: `Copyright &copy; ${year} Adan Rocha. All Rights Reserved.`,
+            1: `Website created using Codehal's script.`
         }    
     }
 }

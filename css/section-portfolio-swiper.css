@@ -1,0 +1,234 @@
+ /* .portfolio { background: var(--second-bg-color); } */
+
+ /* .portfolio { background: var(--second-bg-color); }  */
+ .portfolio { background: var(--bg-color); } 
+
+ .portfolio h2 { margin-bottom: 4rem; } 
+
+/* .portfolio { background: var(--text-color); }
+
+.portfolio h2 { margin-bottom: 4rem; color: var(--bg-color); } */
+
+
+/* A propriedade abreviada (shorthand) segue a ordem dos ponteiros do relógio (começando do topo e indo no sentido horário): topo | direita | base | esquerda */
+/* padding: 0 0 50px 0;     */
+
+
+.portfolio-skills {
+    width: 100%;
+    margin: 0 auto 5rem;
+    min-width: 0;
+}
+
+.portfolio-skills-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio-skills-title span {
+    color: var(--main-color);
+}
+
+.portfolio-skills-container {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 1.5rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.portfolio-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+
+    text-align: center;
+    border-radius: 1.5rem;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.portfolio-skill-img {
+    display: block;
+
+    width: clamp(3.5rem, 5vw, 5.5rem);
+    height: clamp(3.5rem, 5vw, 5.5rem);
+
+    max-width: 100%;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.portfolio-skill legend {
+    display: block;
+    float: none;
+
+    width: 100%;
+    padding: 0;
+
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+
+    transition: color 0.3s ease;
+}
+
+/* Hover da skill */
+
+.portfolio-skill:hover {
+    background: var(--second-bg-color);
+    transform: translateY(-0.4rem);
+}
+
+.portfolio-skill:hover .portfolio-skill-img {
+    transform: scale(1.1);
+}
+
+.portfolio-skill:hover legend {
+    color: var(--main-color);
+}
+
+
+.portfolio-container.swiper {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 1rem 1rem 5rem;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+/* Cada slide ocupa toda a largura */
+.portfolio-swiper .swiper-slide {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Grade dos seis projetos dentro de cada slide */
+.portfolio-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 2.5rem;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Setas */
+.portfolio-swiper .swiper-button-prev,
+.portfolio-swiper .swiper-button-next {
+    color: var(--main-color);
+}
+
+/* Paginação */
+.portfolio-swiper .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+
+    overflow: hidden;
+    display: flex;
+}
+
+/* Codigo antigo */
+/* .portfolio-box img { 
+    width: 100%;
+    transition: .5s ease;
+}  */
+
+.portfolio-box {
+    aspect-ratio: 16/10;  
+    /* aspect-ratio: 16/9;   */
+}
+
+.portfolio-box img { 
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    object-fit: cover;
+} 
+
+
+.portfolio-box:hover img { transform: scale(1.1); }
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    /* padding: 0 4rem; */
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 { 
+    font-size: 2.5rem; 
+    /* font-size: 3rem;  */
+    /* font-size: clamp(1.8rem, 5vw, 2.5rem);  */
+}
+
+.portfolio-layer p {
+    /* font-size: clamp(1.2rem, 3vw, 1.6rem);   */
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    /* max-height: 10rem;  */
+    /* overflow-y: auto;   */
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* width: clamp(3.5rem, 8vw, 5rem);   */
+    /* height: clamp(3.5rem, 8vw, 5rem); */
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+    flex-shrink: 0; 
+}
+
+.portfolio-layer a:hover {
+    transform: scale(1.1);        
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}

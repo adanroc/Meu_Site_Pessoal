@@ -4,8 +4,10 @@
 @import url('section-home.css');
 @import url('section-about.css');
 @import url('section-services.css');
-@import url('section-portfolio.css');
+/* @import url('section-portfolio.css'); */
+/* com efeito swiper - test */
 @import url('section-donations.css');
+@import url('section-portfolio-swiper.css'); 
 @import url('section-contact.css');
 @import url('footer.css');
 
@@ -74,11 +76,10 @@ span { color: var(--main-color); }
     html { font-size: 55%; }   
     
     .input:focus + .labelline-textarea,
-    .input:not(:placeholder-shown) + .labelline-textarea
+    .input:not(:placeholder-shown) + .labelline-textarea { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
     /* somente o textarea preenchido */
     /* { transform: translate(-10%, -172%) scale(0.88); position: absolute; }  */
     /* todos preenchidos */
-    { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
 }
 
 @media (max-width: 991px) { 
@@ -86,12 +87,20 @@ span { color: var(--main-color); }
     .header { padding: 2rem 3%; }
     section { padding: 10rem 3% 2rem; }
     .services  { padding-bottom: 7rem; }
+
     .portfolio { padding-bottom: 7rem; }
-    .donations { padding-bottom: 7rem; font-size: 50%; }
+    .portfolio-skills-container { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
+
+    /* Teste swiper */
+    .portfolio-projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+
+    .donations { padding-bottom: 7rem; }
     .contact { min-height: auto; }
     .footer { padding: 2rem 3%; }
+
 }
 
+/* Tablets */
 @media (max-width: 768px) {
     #menu-icon { display: block; }
 
@@ -107,11 +116,7 @@ span { color: var(--main-color); }
         display: none;
     }
     .navbar.active { display: block; }
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+    .navbar a { display: block; font-size: 2rem; margin: 3rem 0; }
 
     .home { flex-direction: column; }
     .home-content h1 { font-size: 5rem; }
@@ -122,26 +127,34 @@ span { color: var(--main-color); }
     .about img { width: 70vw; margin-top: 4rem; }
 
     .donations { flex-direction: column; }
+    .donations-content { width: 100%;  margin-left: 1rem; box-sizing: border-box; }
     .donations img { width: 70vw; margin-top: 4rem; }
-    .pix-logo-and-tutorial img { margin-left: 140px; width: 50vw;}
+    .pix-logo-and-tutorial img { margin-left: 3rem; width: 50vw; margin-right: 3rem;}
 
     .services h2 { margin-bottom: 3rem; } 
 
     .portfolio h2 { margin-bottom: 3rem; }
-    .portfolio-container { grid-template-columns: repeat(2, 1fr); }
+    .portfolio-container { grid-template-columns: repeat(2, 1fr); }   
+    .portfolio-skills { margin-bottom: 4rem; } 
+    .portfolio-skills-container { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+
 }
 
 @media (max-width: 617px) { 
-    .portfolio-container { grid-template-columns: 1fr; }
-    .pix-logo-and-tutorial img { margin-left: 90px; }
+    .portfolio-container { grid-template-columns: 1fr; }    
+    
+    .portfolio-skills-container { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+    .portfolio-skill { padding: 1.2rem 0.3rem; }
+    .portfolio-skill legend { font-size: 1.4rem; }
+
+    /* Teste swiper */
+    .portfolio-projects-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }        
 
     .footer { flex-direction: column-reverse; }
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
+    .footer p { text-align: center; margin-top: 2rem; }
 }
 
+/* celulares */
 @media (max-width: 450px) { 
     html { font-size: 50%; } 
     /* .contact form .input-box input { width:  100%; } */
@@ -150,29 +163,25 @@ span { color: var(--main-color); }
     .labelline-textarea { top: 50%; }
 
     .input:focus + .labelline-textarea,
-    .input:not(:placeholder-shown) + .labelline-textarea
+    .input:not(:placeholder-shown) + .labelline-textarea { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
     /* somente o textarea preenchido */
     /* { transform: translate(-10%, -172%) scale(0.88); position: absolute; }  */
     /* todos preenchidos */
-    { transform: translate(-10%, -164%) scale(0.88); position: absolute; } 
 
-    .pix-logo-and-tutorial img { margin-left: 70px; }
+    .donations-content { font-size: 1.6rem; }
+    .donations-content h2 { font-size: 4.5rem; }
+    .donations-content p { font-size: 1.6rem; }  
+    .donations-img img { width: 95vw; height: 20vh; }  
 
     .footer { flex-direction: column-reverse; }
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
+    .footer p { text-align: center; margin-top: 2rem; }
 }
 
 @media (max-width: 365px) { 
     .home-img img { width: 90vw; }
-    .about-img img { width: 90vw; }
-    .pix-logo-and-tutorial img { margin-left: 50px; }
+    .about-img img { width: 90vw; }  
+
     .footer { flex-direction: column-reverse; }
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
+    .footer p { text-align: center; margin-top: 2rem; }
 }
 

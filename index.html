@@ -7,15 +7,22 @@
     <link rel="icon" href="img/favicon2.png">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./lib/fontawesome.7.0.1.all.min.css"/> -->
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer"
+        />    
 
     <!-- box icons (free) -->
         <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet"> <!-- Basic Icons -->        
         <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet"> <!-- Filled Icons -->        
         <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet"> <!-- Brand Icons -->
+
+    <!-- swiper library -->
+        <link rel="stylesheet" href="./lib/swiper-14-3-0-bundle.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css"> 
+        <link rel="stylesheet" href="./css/style.css"> 
 </head>
 <body>
     
@@ -100,86 +107,345 @@
 
        <!-- portfolio section design -->
         <section class="portfolio" id="portfolio">
-            <h2 class="heading text">Latest <span>Project</span></h2>
+            <h2 class="heading text">
+                Latest <span>Project</span>
+            </h2>
 
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="img/portfolio/projeto-todolist.png">
+            <!-- Skills -->
+            <div class="portfolio-skills">
 
-                    <div class="portfolio-layer">
-                        <h4 class="text">To-Do List</h4>
-                        <p class="text">
-                            Web project. Pure JavaScript. Bootstrap Framework. Front End.
-                        </p>
+                <!-- <h3 class="portfolio-skills-title text">
+                    Technologies <span>& Tools</span>
+                </h3> -->
+
+                <div class="portfolio-skills-container">
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/html.svg"
+                            alt="HTML">
+                        <legend>HTML</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/css.svg"
+                            alt="CSS">
+                        <legend>CSS</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/javascript.svg"
+                            alt="JavaScript">
+                        <legend>JavaScript</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/bootstrap.svg"
+                            alt="Bootstrap">
+                        <legend>Bootstrap</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/Node.svg"
+                            alt="Node.js">
+                        <legend>Node JS</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/react.svg"
+                            alt="React">
+                        <legend>React</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/PHP.svg"
+                            alt="PHP">
+                        <legend>PHP</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/mysql.svg"
+                            alt="MySQL">
+                        <legend>MySQL</legend>
+                    </div>
+
+                    <div class="portfolio-skill">
+                        <img class="portfolio-skill-img"
+                            src="img/ferramentasDev/mongodb-icon.svg"
+                            alt="MongoDB">
+                        <legend>MongoDB</legend>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <!-- <div class="portfolio-container">
+
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/projeto-todolist.png">
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">To-Do List</h4>
+                            <p class="text">
+                                Web project. Pure JavaScript. Bootstrap Framework. Front End.
+                            </p>
+                            
+                            <a href="https://adanrocha-todolist.netlify.app/" target="_blank"> 
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                            </a> 
+                        </div>
+                    </div>           
+    
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/projeto-cityweather.png">
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">Weather Information</h4>
+                            <p class="text">
+                                Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.
+                            </p>
+    
+                            <a href="https://adanrocha-weatherinformation.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/projeto-imageeditor.png" >
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">Image Editor</h4>
+                            <p class="text">
+                                Web project. JavaScript. Cropper Library. Front-End.
+                            </p>
+    
+                            <a href="https://adanrocha-imageeditor.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/default.png" >
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">Web Design</h4>
+                            <p class="text">
+                                It is a long established fact that a reader will be distracted.
+                            </p>
+    
+                            <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/default.png" >
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">Web Design</h4>
+                            <p class="text">
+                                It is a long established fact that a reader will be distracted.
+                            </p>
+    
+                            <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/default.png" >
+    
+                        <div class="portfolio-layer">
+                            <h4 class="text">Web Design</h4>
+                            <p class="text">
+                                It is a long established fact that a reader will be distracted.
+                            </p>
+    
+                            <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>               
+            </div> -->
+
+            <!-- Projects swiper-->
+            <div class="portfolio-container swiper portfolio-swiper">
+                
+                <div class="swiper-wrapper">                    
+                    <div class="swiper-slide">                        
+                        <div class="portfolio-projects-grid">
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-todolist.png">
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">To-Do List</h4>
+                                    <p class="text">
+                                        Web project. Pure JavaScript. Bootstrap Framework. Front End.
+                                    </p>
+                                    
+                                    <a href="https://adanrocha-todolist.netlify.app/" target="_blank"> 
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                                    </a> 
+                                </div>
+                            </div>           
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-cityweather.png">
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Weather Information</h4>
+                                    <p class="text">
+                                        Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.
+                                    </p>
+            
+                                    <a href="https://adanrocha-weatherinformation.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-imageeditor.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Image Editor</h4>
+                                    <p class="text">
+                                        Web project. JavaScript. Cropper Library. Front-End.
+                                    </p>
+            
+                                    <a href="https://adanrocha-imageeditor.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>                                        
+                    <div class="swiper-slide">
                         
-                        <a href="https://adanrocha-todolist.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> <!-- <a href="#"> -->
-                    </div>
-                </div>           
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio/projeto-cityweather.png">
-
-                    <div class="portfolio-layer">
-                        <h4 class="text">Weather Information</h4>
-                        <p class="text">
-                            Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.
-                        </p>
-
-                        <a href="https://adanrocha-weatherinformation.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                    </div>
+                        <div class="portfolio-projects-grid">
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-todolist.png">
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">To-Do List</h4>
+                                    <p class="text">
+                                        Web project. Pure JavaScript. Bootstrap Framework. Front End.
+                                    </p>
+                                    
+                                    <a href="https://adanrocha-todolist.netlify.app/" target="_blank"> 
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                                    </a> 
+                                </div>
+                            </div>           
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-cityweather.png">
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Weather Information</h4>
+                                    <p class="text">
+                                        Web project. Pure JavaScript and Bootstrap Framework. Front-End. AccuWeather API.
+                                    </p>
+            
+                                    <a href="https://adanrocha-weatherinformation.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/projeto-imageeditor.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Image Editor</h4>
+                                    <p class="text">
+                                        Web project. JavaScript. Cropper Library. Front-End.
+                                    </p>
+            
+                                    <a href="https://adanrocha-imageeditor.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>
+            
+                            <div class="portfolio-box">
+                                <img src="img/portfolio/default.png" >
+            
+                                <div class="portfolio-layer">
+                                    <h4 class="text">Web Design</h4>
+                                    <p class="text">
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+            
+                                    <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div> 
                 </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio/projeto-imageeditor.png" >
-
-                    <div class="portfolio-layer">
-                        <h4 class="text">Image Editor</h4>
-                        <p class="text">
-                            Web project. JavaScript. Cropper Library. Front-End.
-                        </p>
-
-                        <a href="https://adanrocha-imageeditor.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio/default.png" >
-
-                    <div class="portfolio-layer">
-                        <h4 class="text">Web Design</h4>
-                        <p class="text">
-                            It is a long established fact that a reader will be distracted.
-                        </p>
-
-                        <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio/default.png" >
-
-                    <div class="portfolio-layer">
-                        <h4 class="text">Web Design</h4>
-                        <p class="text">
-                            It is a long established fact that a reader will be distracted.
-                        </p>
-
-                        <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="img/portfolio/default.png" >
-
-                    <div class="portfolio-layer">
-                        <h4 class="text">Web Design</h4>
-                        <p class="text">
-                            It is a long established fact that a reader will be distracted.
-                        </p>
-
-                        <a target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                    </div>
-                </div>
+                
+                <div class="swiper-button-prev portfolio-prev"></div>
+                <div class="swiper-button-next portfolio-next"></div>
+                <div class="swiper-pagination portfolio-pagination"></div>
             </div>
         </section>
 
@@ -254,6 +520,7 @@
          <footer class="footer">
             <div class="footer-text">
                 <p class="text">Copyright &copy; 2025 Adan Rocha | All Rights Reserved.</p>
+                <p class="text"></p>
             </div>
 
             <div class="footer-iconTop">
@@ -270,10 +537,14 @@
     <script src="lib/scrollreveal.js"></script>
     <!-- typed js -->
     <!-- <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>  -->
-    <script src="lib/typed.umd.js"></script> 
+    <script src="lib/typed.umd.js"></script>
+    <!-- swiper library -->
+    <script src="lib/swiper-14-3-0-bundle.min.js"></script>    
+
     <!-- custom js -->
     <script src="./js/data/dataMultiLanguage.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/sweetAlert.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/scrollReveal.js"></script>

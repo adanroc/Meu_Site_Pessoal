@@ -9,11 +9,16 @@ ScrollReveal (
 )
 
 ScrollReveal().reveal(
-    '.home-content, .heading', 
+    '.home-content, .heading .skills-container', 
     { origin: 'top' }
 )
+// ScrollReveal().reveal(
+//     '.home-img, .services-container, .portfolio-box, .contact form, .donations-content', 
+//     { origin: 'bottom' }
+// )
+// Test swiper
 ScrollReveal().reveal(
-    '.home-img, .services-container, .portfolio-box, .contact form, .donations-content', 
+    '.home-img, .services-container, .portfolio-projects-grid, .contact form, .donations-content', 
     { origin: 'bottom' }
 )
 ScrollReveal().reveal(
